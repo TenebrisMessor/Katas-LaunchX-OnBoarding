@@ -1,0 +1,21 @@
+##primero se debe tener una carpeta en la cual crear el entorno virtual una vez identificada abrir el cmd y agregar los siguientes comandos
+//Mi carpeta en este caso se llama Programas Python
+
+
+C:\Users\ariel\Documents\Programas python> python3 -m venv env          //Creación de entorno virtual
+C:\Users\ariel\Documents\Programas python> env\Scripts\activate.bat     // Activación de entorno virtual una vez activo la siguiente linea comienza con (Nombre del entorno virtual)
+(env) C:\Users\ariel\Documents\Programas python> pip freeze             //agregamos dentro de este ejercicio el comando para ver las bibliotecas y no habra respuesta dado quee no hay bibliotecas
+(env) C:\Users\ariel\Documents\Programas python> pip install python-dateutil  //Instalamos una biblioteca
+  Collecting python-dateutil
+  Using cached python_dateutil-2.8.2-py2.py3-none-any.whl (247 kB)
+Collecting six>=1.5
+  Using cached six-1.16.0-py2.py3-none-any.whl (11 kB)
+Installing collected packages: six, python-dateutil
+Successfully installed python-dateutil-2.8.2 six-1.16.0
+
+(env) C:\Users\ariel\Documents\Programas python>pip freeze             //volvemos a verificar bibliotecas
+python-dateutil==2.8.2
+six==1.16.0
+
+(env) C:\Users\ariel\Documents\Programas python>deactivate             //desactivamos entorno virtual
+C:\Users\ariel\Documents\Programas python>                             //Dado que el entorno virtual fue desactivado ya no aparece l (env) que es el nombre de mi entorno
